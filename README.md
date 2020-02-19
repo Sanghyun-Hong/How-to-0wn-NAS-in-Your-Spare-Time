@@ -1,8 +1,9 @@
-# How to 0wn NAS in Your Spare Time
+# [ICLR'20] How to 0wn NAS in Your Spare Time
 
-This repository contains the code for the paper [_"How to 0wn NAS in Your Spare Time"_](https://arxiv.org/abs/2002.06776), published at the [_International Conference on Learning Representation (ICLR'20)_](https://icml.cc/Conferences/2020).
+This repository contains the code for the paper [_"How to 0wn NAS in Your Spare Time"_](https://arxiv.org/abs/2002.06776) <br>
+Published at the [_International Conference on Learning Representation (ICLR) 2020_](https://icml.cc/Conferences/2020), Addis Ababa, Ethoipia.
 
-**Authors:** [Sanghyun Hong](http://sanghyun-hong.com), Michael Davinroy, [Yigitcan Kaya](http://www.cs.umd.edu/~yigitcan), [Dana Dachman-Soled](https://user.eng.umd.edu/~danadach/), and [Tudor Dumitras](http://users.umiacs.umd.edu/~tdumitra/)
+**Authors:** [Sanghyun Hong](http://sanghyun-hong.com), Michael Davinroy, [Yigitcan Kaya](http://www.cs.umd.edu/~yigitcan), [Dana Dachman-Soled](https://user.eng.umd.edu/~danadach/), and [Tudor Dumitras](http://users.umiacs.umd.edu/~tdumitra/) <br>
 **Contact:** [Sanghyun Hong](mailto:shhong@cs.umd.edu)
 
 
