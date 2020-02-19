@@ -1,0 +1,32 @@
+0,Embedding,54,hit
+1,Embedding,54,hit
+9,Embedding,62,hit
+210607,transpose,50,hit
+210613,transpose,50,hit
+210754,narrow,62,hit
+210967,Convolution,60,hit
+210985,Convolution,60,hit
+210991,Convolution,62,hit
+941689,TH-GEMM (start.),54,hit
+9313682,TH-GEMM (termi.),56,hit
+9468889,TH-GEMM (start.),56,hit
+9469000,TH-GEMM (start.),54,hit
+9473620,narrow,58,hit
+9473770,Convolution,52,hit
+9473773,Convolution,62,hit
+10144145,TH-GEMM (start.),58,hit
+18499952,TH-GEMM (termi.),56,hit
+18655442,Convolution,52,hit
+18655671,Sigmoid,60,hit
+18655710,Sigmoid,58,hit
+18775737,* (multiplication),64,hit
+18775740,* (multiplication),68,hit
+18835033,MaxPool1d,52,hit
+18835045,MaxPool1d,50,hit
+18949264,transpose,50,hit
+18949546,TH-GEMM (start.),58,hit
+18949642,TH-GEMM (termi.),56,hit
+18949831,TH-GEMM (start.),58,hit
+18949831,TH-GEMM (termi.),56,hit
+18949881,TH-GEMM (start.),120,hit
+18949905,Sigmoid,60,hit

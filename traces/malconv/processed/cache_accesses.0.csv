@@ -1,0 +1,13 @@
+[0] Embedding,0,9
+[1] transpose,210607,6
+[2] narrow,210754,0
+[3] Convolution,941689,8371993
+[4] narrow,9473620,0
+[5] Convolution,10144145,8355807
+[6] Sigmoid,18655671,39
+[7] * (multiplication),18775737,3
+[8] MaxPool1d,18835033,12
+[9] transpose,18949264,0
+[10] FC,18949546,96
+[11] FC,18949831,0
+[12] Sigmoid,18949905,0

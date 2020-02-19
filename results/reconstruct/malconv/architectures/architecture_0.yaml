@@ -1,0 +1,143 @@
+!!python/object:networkx.classes.digraph.DiGraph
+_adj: &id022
+  '[0] Embedding':
+    '[1] transpose': &id012 {}
+  '[10] FC':
+    '[11] FC': &id010 {}
+  '[11] FC':
+    '[12] Sigmoid': &id011 {}
+  '[12] Sigmoid': {}
+  '[1] transpose':
+    '[2] narrow': &id013 {}
+    '[4] narrow': &id015 {}
+  '[2] narrow':
+    '[3] Convolution': &id014 {}
+  '[3] Convolution':
+    '[7] * (multiplication)': &id018 {}
+  '[4] narrow':
+    '[5] Convolution': &id016 {}
+  '[5] Convolution':
+    '[6] Sigmoid': &id017 {}
+  '[6] Sigmoid':
+    '[7] * (multiplication)': &id019 {}
+  '[7] * (multiplication)':
+    '[8] MaxPool1d': &id020 {}
+  '[8] MaxPool1d':
+    '[9] transpose': &id021 {}
+  '[9] transpose':
+    '[10] FC': &id009 {}
+_node: &id024
+  '[0] Embedding':
+    out_dim: &id003 !!python/tuple
+    - 2000000
+    - 8
+  '[10] FC':
+    attr_param: !!python/tuple
+    - 128
+    - 128
+    in_dim: &id008 !!python/tuple
+    - 128
+    out_dim: &id001 !!python/tuple
+    - 128
+  '[11] FC':
+    attr_param: !!python/tuple
+    - 128
+    - 1
+    in_dim: *id001
+    out_dim: &id002 !!python/tuple
+    - 1
+  '[12] Sigmoid':
+    attr_param: null
+    in_dim: *id002
+    out_dim: *id002
+  '[1] transpose':
+    attr_param: null
+    in_dim: *id003
+    out_dim: &id005 !!python/tuple
+    - 8
+    - 2000000
+  '[2] narrow':
+    attr_param: null
+    in_dim: !!python/tuple
+    - 8
+    - 2000000
+    out_dim: &id004 !!python/tuple
+    - 4
+    - 2000000
+  '[3] Convolution':
+    attr_param: !!python/tuple
+    - 4
+    - 128
+    - 500
+    - 500
+    in_dim: *id004
+    out_dim: &id007 !!python/tuple
+    - 128
+    - 4000
+  '[4] narrow':
+    attr_param: null
+    in_dim: *id005
+    out_dim: &id006 !!python/tuple
+    - 4
+    - 2000000
+  '[5] Convolution':
+    attr_param: !!python/tuple
+    - 4
+    - 128
+    - 500
+    - 500
+    in_dim: *id006
+    out_dim: *id007
+  '[6] Sigmoid':
+    attr_param: null
+    in_dim: *id007
+    out_dim: *id007
+  '[7] * (multiplication)':
+    attr_param: null
+    in_dim: *id007
+    out_dim: *id007
+  '[8] MaxPool1d':
+    attr_param: null
+    in_dim: *id007
+    out_dim: *id008
+  '[9] transpose':
+    attr_param: null
+    in_dim: *id008
+    out_dim: *id008
+_pred:
+  '[0] Embedding': {}
+  '[10] FC':
+    '[9] transpose': *id009
+  '[11] FC':
+    '[10] FC': *id010
+  '[12] Sigmoid':
+    '[11] FC': *id011
+  '[1] transpose':
+    '[0] Embedding': *id012
+  '[2] narrow':
+    '[1] transpose': *id013
+  '[3] Convolution':
+    '[2] narrow': *id014
+  '[4] narrow':
+    '[1] transpose': *id015
+  '[5] Convolution':
+    '[4] narrow': *id016
+  '[6] Sigmoid':
+    '[5] Convolution': *id017
+  '[7] * (multiplication)':
+    '[3] Convolution': *id018
+    '[6] Sigmoid': *id019
+  '[8] MaxPool1d':
+    '[7] * (multiplication)': *id020
+  '[9] transpose':
+    '[8] MaxPool1d': *id021
+_succ: *id022
+adjlist_inner_dict_factory: &id023 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id023
+edge_attr_dict_factory: *id023
+graph: {}
+graph_attr_dict_factory: *id023
+node_attr_dict_factory: *id023
+node_dict_factory: *id023
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id024
